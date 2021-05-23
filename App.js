@@ -54,32 +54,31 @@ export default function App() {
     <View style={{flexDirection: 'row', justifyContent:"center",paddingTop:320,paddingLeft:25,position:'absolute',flex: 1,paddingLeft:375,}}>
 
         <View style={{position:'absolute',marginTop:326, height: 90, width: 322, backgroundColor: 'white',shadowColor: '#000',shadowOffset: {width: 0, height: 2},shadowOpacity: 0.2,shadowRadius: 4,borderBottomRightRadius:15,borderBottomLeftRadius:15,borderTopLeftRadius:15,borderTopRightRadius:15 }}>
+        
         <AntDesign 
         style={{
           paddingLeft:8,
           paddingTop:24
         }}
-        name="wifi" size={40} color="green"/>
+        name="user" size={40} color="midninghtblue"/>
+        
         <Switch
-    trackColor={{ false: "#767577", true: "green" }}
-    thumbColor={isEnabled ? "white" : "#f4f3f4"}
-    ios_backgroundColor="midnightblue"
-    onValueChange={toggleSwitch}
-    value={isEnabled}
-    style={{position:'absolute', marginLeft:250,
-    marginTop:29}}
-    />
+	    trackColor={{ false: "#767577", true: "green" }}
+	    thumbColor={isEnabled ? "white" : "#f4f3f4"}
+	    ios_backgroundColor="midnightblue"
+	    onValueChange={toggleSwitch}
+	    value={isEnabled}
+	    style={{position:'absolute', marginLeft:250,
+	    marginTop:29}}
+    	/>
 
-<Text style={{fontSize:16,position:'absolute',paddingLeft:70,
+		<Text style={{fontSize:16,position:'absolute',paddingLeft:70,
           paddingTop:38,color:"midnightblue",fontWeight:"600"}}>
-          {isEnabled ? 'Vous etes en Ligne' : 'Vous etes Hors Ligne'}
-
-          
- </Text>
+          {isEnabled ? 'Vous etes en Ligne' : 'Vous etes Hors Ligne'}  
+ 		</Text>
      
         </View>
         
-
       </View>
 
       
@@ -95,7 +94,6 @@ export default function App() {
             marginTop: 10,
             alignItems: "center",
             marginLeft:20,
-            
             
           }}
         >
@@ -447,45 +445,5 @@ const styles = StyleSheet.create({
     position:'absolute',
     width:350,
     marginTop:440
-  },
-
-  cardBodyTop: {
-    flexDirection: 'row',
-  },
-  cardLeftSide: {
-    paddingHorizontal: 10,
-    flex: 1,
-  },
-  
-  Adresse: {
-    color: 'gray',
-    fontSize: 15,
-    fontWeight: '500',
-    marginTop: 5,
-  },
-
-  type: {
-    color: 'gray',
-    fontSize: 15,
-    fontWeight: '500',
-    marginTop: 4,
-  },
-  Avatar: {
-    height: 50,
-    width: 50,
-    backgroundColor: 'gray',
-    borderRadius: 0,
-  },
-  
-
-  
-  cardBodyBottom: {
-    marginTop: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  cardBottomTitle: {
-    fontSize: 14,
-    marginTop: 5,
-  },
+  },  
 });
